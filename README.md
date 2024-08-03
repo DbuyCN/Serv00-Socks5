@@ -59,12 +59,12 @@ socks5的密码
 6、下载脚本进行保活(可以自己SFTP上传)
 ```
 cd domains/<username>.serv00.net/socks5/
-wget https://github.com/ansoncloud8/am-serv00-socks5/raw/main/check_socks5.sh
+wget https://github.com/ansoncloud8/am-serv00-socks5/raw/main/check_cron.sh
 ```
 
 7、给脚本赋予运行权限
 ```
-chmod +x check_socks5.sh
+chmod +x check_cron.sh
 ```
 
 8、查看保活crontab任务
@@ -75,7 +75,7 @@ crontab -e
 上面命令完会显示下面信息就是有保活设置成功
 
 ```
-* * * * * /home/domains/<username>.serv00.net/socks5/check_socks5.sh > /dev/null 2>&1
+* * * * * /home/domains/<username>.serv00.net/socks5/check_cron.sh > /dev/null 2>&1
 ```
 
 ## 其它说明：
